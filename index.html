@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090812"><title>MEME WORLD | دنیای میم‌ها</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#090812;--panel:#12101e;--panel2:#191629;--line:#29243c;--text:#f5f2ff;--muted:#aaa3bd;--purple:#9b5cff;--pink:#ff4fc8;--cyan:#54e6ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#28124c 0,transparent 38%),var(--bg);color:var(--text);font-family:Vazirmatn,system-ui,sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{position:sticky;top:0;z-index:5;background:#090812df;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;font-size:25px;letter-spacing:1px;direction:ltr}.brand span{color:var(--pink);text-shadow:0 0 22px #ff4fc866}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}.navlinks a{color:inherit;text-decoration:none}.navlinks a:hover{color:white}.btn{border:0;border-radius:13px;padding:11px 17px;color:white;font-weight:800;background:linear-gradient(110deg,var(--purple),var(--pink));box-shadow:0 8px 28px #9b5cff30}.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}.hero{padding:65px 0 38px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:25px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#d7baff;background:#9b5cff1c;border:1px solid #9b5cff55;border-radius:99px;padding:7px 13px;font-size:12px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.15;margin:18px 0 12px;font-weight:900}.hero h1 b{background:linear-gradient(90deg,#bd91ff,#ff75d8);color:transparent;background-clip:text}.hero p{color:var(--muted);line-height:2;max-width:560px;margin:0 0 23px}.hero-art{min-height:240px;border:1px solid #6b48a7;border-radius:28px;background:linear-gradient(145deg,#24133e,#11101d 65%);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 20px 70px #7e38cc22}.hero-art:before,.hero-art:after{content:'';position:absolute;border-radius:50%;filter:blur(2px)}.hero-art:before{width:210px;height:210px;background:#a34cff33;top:-90px;right:-30px}.hero-art:after{width:170px;height:170px;background:#ff4fc822;bottom:-90px;left:-30px}.emoji-wall{font-size:clamp(42px,7vw,72px);z-index:1;filter:drop-shadow(0 10px 20px #0008);transform:rotate(-5deg)}.stats{display:flex;gap:25px;margin-top:25px;color:var(--muted);font-size:13px}.stats strong{color:white;font-size:17px;display:block}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:20px 0}.section-head h2{margin:0;font-size:24px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.search{flex:1;min-width:190px;background:var(--panel);border:1px solid var(--line);color:white;border-radius:13px;padding:12px 15px;outline:none}.search:focus,textarea:focus,input:focus{border-color:var(--purple)}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{background:var(--panel);color:var(--muted);border:1px solid var(--line);padding:10px 14px;border-radius:12px}.filter.active{background:#9b5cff25;border-color:var(--purple);color:#e7d7ff}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:65px}.card{background:linear-gradient(160deg,#171426,#100f19);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#6f4b9e}.meme-img{min-height:215px;display:grid;place-items:center;font-size:78px;position:relative;background:radial-gradient(circle at 50% 40%,#38215c,#171323 70%)}.meme-img video{display:block;width:100%;max-height:360px;object-fit:contain;background:#05040a}.creator{font-size:11px;color:#c5a9ff;margin:-3px 0 12px}.creator b{color:#f3eaff}.meme-img .tag{position:absolute;top:13px;right:13px;background:#090812bb;border:1px solid #ffffff20;border-radius:30px;padding:5px 10px;font-size:11px;color:#e6d7ff}.card-body{padding:16px}.card h3{font-size:17px;margin:0 0 7px}.card p{font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 15px}.card-actions{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px}.like,.comment-toggle{background:transparent;border:0;color:var(--muted);padding:6px 8px;border-radius:9px}.like.liked{color:#ff6eaa}.like:hover,.comment-toggle:hover{background:#ffffff0b;color:white}.comments{display:none;border-top:1px solid var(--line);padding:12px 16px 16px}.comments.open{display:block}.comment-list{display:grid;gap:8px;margin-bottom:10px}.comment{background:#ffffff08;padding:8px 10px;border-radius:9px;font-size:12px}.comment small{color:var(--muted);display:block}.comment-form{display:flex;gap:7px}.comment-form input{min-width:0;flex:1;background:#0b0a13;border:1px solid var(--line);border-radius:9px;color:white;padding:9px}.comment-form button{border:0;border-radius:9px;background:var(--purple);color:white;padding:0 13px}.empty{grid-column:1/-1;text-align:center;padding:45px;color:var(--muted);border:1px dashed var(--line);border-radius:18px}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px;text-align:center}.modal{position:fixed;inset:0;background:#000b;z-index:10;display:none;place-items:center;padding:18px}.modal.show{display:grid}.dialog{width:min(520px,100%);background:#151222;border:1px solid #44345f;border-radius:22px;padding:22px;box-shadow:0 25px 90px #0009}.dialog-head{display:flex;align-items:center;justify-content:space-between}.dialog h2{margin:0 0 15px}.close{border:0;background:#ffffff12;color:white;border-radius:9px;padding:7px 11px}.field{display:grid;gap:7px;margin:13px 0}.field label{font-size:13px;color:#d7cde9}.field input,.field textarea,.field select{width:100%;background:#0c0b14;border:1px solid var(--line);border-radius:11px;color:white;padding:11px;outline:none}.field textarea{min-height:90px;resize:vertical}.note{color:var(--muted);font-size:11px;line-height:1.8}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#242039;border:1px solid #59427d;padding:11px 17px;border-radius:12px;opacity:0;pointer-events:none;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:40px}.hero-art{min-height:180px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:540px){.wrap{padding:0 15px}.nav{height:65px}.brand{font-size:21px}.nav .btn{padding:9px 12px;font-size:12px}.hero{padding:35px 0 20px}.hero h1{font-size:43px}.stats{gap:17px}.grid{grid-template-columns:1fr;gap:14px}.meme-img{height:225px}.section-head h2{font-size:21px}}
+</style></head>
+<body>
+<header class="top"><div class="wrap nav"><a class="brand" href="#home" style="text-decoration:none;color:white">MEME <span>WORLD</span></a><nav class="navlinks"><a href="#memes">میم‌ها</a><a href="#about">درباره ما</a></nav><button class="btn" id="openUpload">＋ ارسال میم</button></div></header>
+<main class="wrap" id="home">
+<section class="hero"><div><span class="eyebrow">✦ به دنیای میم‌ها خوش اومدی</span><h1>اینجا دنیای<br><b>میم‌هاست!</b></h1><p>از میم‌های خنده‌دار تا گیمینگ و دارک؛ بهترین میم‌ها رو ببین، لایک کن و میم خودت رو با بقیه به اشتراک بذار.</p><button class="btn" onclick="document.getElementById('memes').scrollIntoView({behavior:'smooth'})">بزن بریم ببینیم! ←</button><div class="stats"><div><strong id="memeCount">۶</strong>میم منتشرشده</div><div><strong id="likeCount">۰</strong>لایک ثبت‌شده</div><div><strong>∞</strong>خنده بی‌نهایت</div></div></div><div class="hero-art"><div class="emoji-wall">😂 💀<br>🎮 🤡</div></div></section>
+<section id="memes"><div class="section-head"><div><h2>🔥 ویترین میم‌ها</h2><p>میم مورد علاقه‌ات رو پیدا کن</p></div></div><div class="tools"><input id="search" class="search" placeholder="🔎 جست‌وجو بین میم‌ها..."><div class="filters" id="filters"><button class="filter active" data-cat="همه">همه</button><button class="filter" data-cat="خنده‌دار">😂 خنده‌دار</button><button class="filter" data-cat="گیمینگ">🎮 گیمینگ</button><button class="filter" data-cat="دارک">💀 دارک</button><button class="filter" data-cat="ساخته‌شده توسط شما">✨ کاربران</button></div></div><div class="grid" id="memeGrid"></div></section>
+<section id="about" style="padding:10px 0 45px"><div class="section-head"><div><h2>🌍 درباره MEME WORLD</h2><p>یه گوشه از اینترنت برای خنده، خلاقیت و میم‌های باحال!</p><p style="color:#d7baff;margin-top:10px">سازنده سایت: <strong>ایلیا راستاد</strong> 💜</p></div></div></section>
+</main><footer class="footer"><div class="wrap">© 2026 MEME WORLD — ساخته‌شده توسط <strong style="color:#d7baff">ایلیا راستاد</strong> 💜</div></footer>
+<div class="modal" id="uploadModal"><div class="dialog"><div class="dialog-head"><h2>✨ ارسال میم جدید</h2><button class="close" id="closeUpload">✕</button></div><form id="uploadForm"><div class="field"><label>عنوان میم</label><input name="title" maxlength="55" required placeholder="مثلاً وقتی امتحان آسونه..."></div><div class="field"><label>توضیح کوتاه</label><textarea name="desc" maxlength="180" placeholder="یه توضیح بامزه بنویس..."></textarea></div><div class="field"><label>ویدیوی میم (اختیاری)</label><input name="video" type="file" accept="video/*"><span class="note">فرمت‌های ویدیویی پشتیبانی‌شده توسط مرورگرت؛ حداکثر ۴۰ مگابایت.</span></div><div class="field"><label>ایموجی برای میم بدون ویدیو</label><input name="emoji" maxlength="5" placeholder="😂" value="😂"></div><div class="field"><label>سازنده</label><input value="ایلیا راستاد" readonly></div><div class="field"><label>دسته‌بندی</label><select name="cat"><option>خنده‌دار</option><option>گیمینگ</option><option>دارک</option></select></div><button class="btn" style="width:100%">انتشار میم 🚀</button><p class="note">پس از تکمیل تنظیمات Supabase، میم‌ها، ویدیوها و نظرها به‌صورت آنلاین برای کاربران ذخیره می‌شوند.</p></form></div></div><div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/*
+  MEME WORLD + Supabase
+  1) Replace the two placeholders below with your Project URL and Publishable key.
+  2) Run the SQL supplied with the setup instructions to create the table, policies and bucket.
+*/
+const SUPABASE_URL = "https://odlmmenivgzhtskpkmwz.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_8JBftK_xJKvcknO__92KlA_Ojib1z6y";
+const supabaseReady = window.supabase && SUPABASE_URL.startsWith("https://") &&
+  !SUPABASE_URL.includes("PASTE_") && !SUPABASE_PUBLISHABLE_KEY.includes("PASTE_");
+const db = supabaseReady ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
+
+const starter = [
+ {id:'a1',title:'وقتی میگی فقط پنج دقیقه دیگه',desc:'و یهو می‌بینی دو ساعت گذشته 😭',emoji:'⏰',cat:'خنده‌دار',likes:18,comments:[]},
+ {id:'a2',title:'وقتی رفیقت میگه بیا رنک بریم',desc:'ولی هنوز لودینگ بازی تموم نشده 💀',emoji:'🎮',cat:'گیمینگ',likes:26,comments:[]},
+ {id:'a3',title:'من و افکار ساعت ۳ صبح',desc:'مغز: وقت مرور تمام اتفاقات زندگیه.',emoji:'🌚',cat:'دارک',likes:12,comments:[]},
+ {id:'a4',title:'وقتی معلم میگه امتحان آسونه',desc:'اون لحظه که برگه رو می‌بینی...',emoji:'🤡',cat:'خنده‌دار',likes:31,comments:[]},
+ {id:'a5',title:'یک دست دیگه و بعد خواب',desc:'آخرین جمله قبل از طلوع آفتاب 🎧',emoji:'🕹️',cat:'گیمینگ',likes:22,comments:[]},
+ {id:'a6',title:'وقتی اینترنت قطع میشه',desc:'زندگی واقعی دوباره شروع میشه.',emoji:'📡',cat:'دارک',likes:9,comments:[]}
+];
+let memes = starter.map(x=>({...x}));
+let active='همه';
+const grid=document.getElementById('memeGrid');
+const fa=n=>Number(n||0).toLocaleString('fa-IR');
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2600)}
+function categoryForFilter(cat){return cat==='ساخته‌شده توسط شما'?'کاربران':cat}
+async function loadMemes(){
+ if(!db){toast('ابتدا آدرس و کلید Supabase را در کد سایت وارد کن.');return}
+ const {data,error}=await db.from('memes').select('*').order('created_at',{ascending:false});
+ if(error){console.error(error);toast('اتصال برقرار نشد؛ تنظیمات دیتابیس را بررسی کن.');return}
+ memes=(data||[]).map(m=>({...m,desc:m.description||'',cat:m.category||'خنده‌دار',videoUrl:m.video_path?db.storage.from('meme-videos').getPublicUrl(m.video_path).data.publicUrl:null,comments:[]}));
+ await render();
+}
+async function loadComments(memeId){
+ const {data,error}=await db.from('comments').select('id,body,created_at').eq('meme_id',memeId).order('created_at');
+ if(error){console.error(error);return []}
+ return data||[];
+}
+async function render(){
+ const q=document.getElementById('search').value.trim().toLowerCase();
+ const shown=memes.filter(m=>(active==='همه'||(active==='ساخته‌شده توسط شما'?m.creator==='ایلیا راستاد':m.cat===active))&&((m.title+' '+(m.desc||'')).toLowerCase().includes(q)));
+ grid.innerHTML='';
+ if(!shown.length)grid.innerHTML='<div class="empty">چیزی پیدا نشد! یه عبارت دیگه امتحان کن 🔎</div>';
+ for(const m of shown){
+  const el=document.createElement('article');el.className='card';
+  let media=m.videoUrl?`<video controls playsinline preload="metadata" src="${esc(m.videoUrl)}"></video>`:esc(m.emoji||'😂');
+  const comments=Array.isArray(m.comments)?m.comments:[];
+  el.innerHTML=`<div class="meme-img"><span class="tag">${esc(m.cat||m.category||'خنده‌دار')}</span>${media}</div>
+   <div class="card-body"><h3>${esc(m.title)}</h3><p>${esc(m.desc||m.description||'')}</p>
+   <div class="creator">سازنده: <b>${esc(m.creator||'کاربر MEME WORLD')}</b></div>
+   <div class="card-actions"><button class="like" data-like="${esc(m.id)}">♡ ${fa(m.likes)} لایک</button>
+   <button class="comment-toggle" data-comments="${esc(m.id)}">💬 نظرها</button></div></div>
+   <div class="comments" id="comments-${esc(m.id)}"><div class="comment-list">${comments.map(c=>`<div class="comment"><small>کاربر MEME WORLD</small>${esc(c.body||c)}</div>`).join('')||'<small style="color:var(--muted)">هنوز نظری ثبت نشده.</small>'}</div>
+   <form class="comment-form" data-comment="${esc(m.id)}"><input maxlength="100" required placeholder="نظرت رو بنویس..."><button>ثبت</button></form></div>`;
+  grid.appendChild(el);
+ }
+ document.getElementById('memeCount').textContent=fa(memes.length);
+ document.getElementById('likeCount').textContent=fa(memes.reduce((s,m)=>s+Number(m.likes||0),0));
+}
+document.getElementById('filters').addEventListener('click',e=>{
+ const b=e.target.closest('button[data-cat]');if(!b)return;
+ active=b.dataset.cat;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));render();
+});
+document.getElementById('search').addEventListener('input',render);
+grid.addEventListener('click',async e=>{
+ const like=e.target.closest('[data-like]');
+ if(like){
+  if(!db){toast('برای ثبت لایک، اتصال Supabase را کامل کن.');return}
+  const m=memes.find(x=>String(x.id)===like.dataset.like);if(!m)return;
+  const {error}=await db.rpc('increment_meme_likes',{meme_id:m.id});
+  if(error){toast('ثبت لایک انجام نشد.');console.error(error)}else await loadMemes();
+  return;
+ }
+ const c=e.target.closest('[data-comments]');
+ if(c){
+  const panel=document.getElementById('comments-'+c.dataset.comments);
+  panel.classList.toggle('open');
+  if(panel.classList.contains('open')&&db){
+   const list=panel.querySelector('.comment-list');const rows=await loadComments(c.dataset.comments);
+   list.innerHTML=rows.map(x=>`<div class="comment"><small>کاربر MEME WORLD</small>${esc(x.body)}</div>`).join('')||'<small style="color:var(--muted)">هنوز نظری ثبت نشده.</small>';
+  }
+ }
+});
+grid.addEventListener('submit',async e=>{
+ const f=e.target.closest('[data-comment]');if(!f)return;e.preventDefault();
+ if(!db){toast('ابتدا اتصال Supabase را کامل کن.');return}
+ const body=f.querySelector('input').value.trim();if(!body)return;
+ const {error}=await db.from('comments').insert({meme_id:f.dataset.comment,body});
+ if(error){toast('ثبت نظر انجام نشد.');console.error(error);return}
+ await loadMemes();const panel=document.getElementById('comments-'+f.dataset.comment);panel.classList.add('open');
+ const rows=await loadComments(f.dataset.comment);panel.querySelector('.comment-list').innerHTML=rows.map(x=>`<div class="comment"><small>کاربر MEME WORLD</small>${esc(x.body)}</div>`).join('');
+});
+const modal=document.getElementById('uploadModal');
+document.getElementById('openUpload').onclick=()=>modal.classList.add('show');
+document.getElementById('closeUpload').onclick=()=>modal.classList.remove('show');
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
+document.getElementById('uploadForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ if(!db){toast('ابتدا آدرس و کلید Supabase را در کد سایت وارد کن.');return}
+ const d=new FormData(e.target),file=d.get('video');
+ if(file&&file.size>40*1024*1024){toast('حجم ویدیو باید کمتر از ۴۰ مگابایت باشد.');return}
+ if(file&&file.size>0&&!file.type.startsWith('video/')){toast('لطفاً یک فایل ویدیویی انتخاب کن.');return}
+ let video_path=null;
+ if(file&&file.size>0){
+  const safeName=file.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+  video_path=`${Date.now()}-${safeName}`;
+  const {error:uploadError}=await db.storage.from('meme-videos').upload(video_path,file,{contentType:file.type,upsert:false});
+  if(uploadError){toast('آپلود ویدیو انجام نشد؛ تنظیمات Storage را بررسی کن.');console.error(uploadError);return}
+ }
+ const payload={title:d.get('title').trim(),description:d.get('desc').trim(),emoji:d.get('emoji').trim()||'😂',category:d.get('cat'),creator:'ایلیا راستاد',video_path,likes:0};
+ const {error}=await db.from('memes').insert(payload);
+ if(error){toast('انتشار میم انجام نشد؛ تنظیمات جدول را بررسی کن.');console.error(error);return}
+ await loadMemes();e.target.reset();modal.classList.remove('show');toast('میم در MEME WORLD منتشر شد! 🎉');
+ document.getElementById('memes').scrollIntoView({behavior:'smooth'});
+});
+if(db)loadMemes();else render();
+</script></body></html>
